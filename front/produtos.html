@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/front/static/css/structure.css">
+    <link rel="stylesheet" href="/front/static/css/header.css">
+    <link rel="stylesheet" href="/front/static/css/navbar.css">
+    <link rel="stylesheet" href="/front/static/css/footer.css">
+    <link rel="stylesheet" href="/front/static/css/products.css">
+
+    <link rel="stylesheet" href="/front/static/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header>
+
+    <nav id="subheader" class="navigation"></nav>
+
+    <div id="products-container">
+        <div class="container mt-5 d-flex flex-column">
+            <h3 class="text-center" id="products-subtitles"></h3>
+            <div class="row" id="invisible">
+                <img src="./static/img/null.png" alt="null">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto aproduct" data-category="blusa">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Baby look lana">
+                            <img src="./static/img/blusas/blusa lana.png" alt="Produto 1">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Baby look lana</p>
+                            <p class="product-price">R$35.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Baby look lana', '$35.00', './static/img/blusas/blusa lana.png', 35.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="blusas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Manga longa lana">
+                            <img src="./static/img/blusas/manga longa lana.png" alt="Produto 2">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Manga longa lana</p>
+                            <p class="product-price">R$27.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Manga longa lana', '$27.00', './static/img/blusas/manga longa lana.png', 27.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="blusas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Manga longa branca">
+                            <img src="./static/img/blusas/manga longa white.png" alt="Produto 3">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Manga longa branca</p>
+                            <p class="product-price">R$45.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Manga longa branca', '$45.00', './static/img/blusas/manga longa white.png', 45.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto aproduct" data-category="blusas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Tule duas peças">
+                            <img src="./static/img/blusas/tule duas pecas.png" alt="">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Tule duas peças</p>
+                            <p class="product-price">R$50.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Tule duas peças', '$50.00', './static/img/blusas/tule duas pecas.png', 50.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="calcas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Calça cargo bege">
+                            <img src="./static/img/calcas/calca cargo bege.png" alt="">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Calça cargo bege</p>
+                            <p class="product-price">R$60.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Calça cargo bege', '$60.00', './static/img/calcas/calca cargo bege.png', 60.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="calcas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Calça cargo cinza">
+                            <img src="./static/img/calcas/calca cargo cinza.png" alt="Produto 2">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Calça cargo cinza</p>
+                            <p class="product-price">R$65.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Calça cargo cinza', 'R$65.00', './static/img/calcas/calca cargo cinza.png', 65.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="calcas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Calça cargo jeans">
+                            <img src="./static/img/calcas/calca cargo jeans.png" alt="">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Calça cargo jeans</p>
+                            <p class="product-price">R$60.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Calça cargo jeans', 'R$60.00', './static/img/calcas/calca cargo jeans.png', 60.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="calcas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Calça cargo verde militar">
+                            <img src="./static/img/calcas/calca cargo verde.png" alt="">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Calça cargo verde militar</p>
+                            <p class="product-price">R$60.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Calça cargo verde militar', '$60.00', './static/img/calcas/calca cargo verde.png', 60.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="calcas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Calça rosa pantalona">
+                            <img src="./static/img/calcas/calca rosa.png" alt="Produto 2">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Calça rosa pantalona</p>
+                            <p class="product-price">R$35.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Calça rosa pantalona', '$35.00', './static/img/calcas/calca rosa.png', 35.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="jaquetas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Jaqueta lana brilhante">
+                            <img src="./static/img/jaquetas/jaqueta lana brilhante.png" alt="">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Jaqueta lana brilhante</p>
+                            <p class="product-price">R$89.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Jaqueta lana brilhante', '$89.00', './static/img/jaquetas/jaqueta lana brilhante.png', 89.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="jaquetas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Jaqueta lana fosca">
+                            <img src="./static/img/jaquetas/jaqueta lana fosca.png" alt="">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Jaqueta lana fosca</p>
+                            <p class="product-price">R$89.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Jaqueta lana fosca', '$89.00', './static/img/jaquetas/jaqueta lana fosca.png', 89.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="jaquetas">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Jaqueta prata puffer">
+                            <img src="./static/img/jaquetas/jaqueta prata puffer.png" alt="Produto 2">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Jaqueta prata puffer</p>
+                            <p class="product-price">R$99.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Jaqueta prata puffer', '$99.00', './static/img/jaquetas/jaqueta prata puffer.png', 99.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="vestidos">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Vestido back princess">
+                            <img src="./static/img/vestidos/vestido black princess.png" alt="">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Vestido back princess</p>
+                            <p class="product-price">R$55.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Vestido back princess', '$55.00', './static/img/vestidos/vestido black princess.png', 55.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="vestidos">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Vestido terracota">
+                            <img src="./static/img/vestidos/vestido terracota.png" alt="">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Vestido terracota</p>
+                            <p class="product-price">R$50.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Vestido terracota', '$50.00', './static/img/vestidos/vestido terracota.png', 50.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto aproduct" data-category="conjuntos">
+                    <div class="prod-products-card">
+                        <a href="/front/produtoSolo.html?nome=Conjunto barbie core">
+                            <img src="./static/img/conjuntos/conjunto barbie core.png" alt="Produto 2">
+                        </a>
+                        <div class="prod-card-body">
+                            <p>Conjunto barbie core</p>
+                            <p class="product-price">R$45.00</p>
+                            <button class="btn btn-primary"
+                                onclick="adicionarAoCarrinho('Conjunto barbie core', '$45.00', './static/img/conjuntos/conjunto barbie core.png', 45.00)">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="foot" class="footer mt-auto py-3"></footer>
+
+    <script src="/front/static/js/adicionarCarrinho.js"></script>
+
+    <script src="/front/static/js/navbar.js"></script>
+    <script src="/front/static/js/subheader.js"></script>
+    <script src="/front/static/js/footer.js"></script>
+    <script src="/front/static/js/produtos.js"></script>
+    <script src="/front/static/js/adicionarCarrinho.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

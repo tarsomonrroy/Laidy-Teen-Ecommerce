@@ -1,0 +1,115 @@
+body {
+    background-image: linear-gradient(
+        rgb(242, 230, 248),
+        rgb(248, 214, 242),
+        rgb(202, 183, 245),
+        rgb(181, 154, 243),
+        rgb(169, 145, 235),
+        rgb(181, 154, 243),
+        rgb(202, 183, 245),
+        rgb(248, 214, 242),
+        rgb(242, 230, 248)
+    );
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#products-container {
+    padding-top: 140px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+#products-subtitles {
+    font-size: 40px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+.prod-products-card {
+    background-color: #F8F9FA;
+    border-color: rgba(128, 128, 128, 0.247);
+    border-style: double;
+    border-radius: 30px;
+    border-width: 4px;
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.prod-products-card img {
+    border-color: rgba(106, 63, 146, 0.514);
+    border-style: solid;
+    border-radius: 30px;
+    max-width: 280px;
+    height: 360px;
+    display: block;
+    margin: auto;
+}
+
+.prod-card-body {
+    font-size: 130%;
+}
+
+.invisible {
+    padding: 300px;
+}
+
+.aproduct {
+    display: none;
+}
+    
+/* Pages: product page */
+.one-product-container {
+    margin-top: 150px;
+    background-image: linear-gradient(
+        rgb(242, 230, 248),
+        rgb(248, 214, 242),
+        rgb(202, 183, 245),
+        rgb(181, 154, 243),
+        rgb(169, 145, 235),
+        rgb(181, 154, 243),
+        rgb(202, 183, 245),
+        rgb(248, 214, 242),
+        rgb(242, 230, 248)
+    );
+}
+
+.product-image {
+    max-width: 370px;
+    margin-top: 90px;
+    margin-left: 100px;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(106, 63, 146, 0.514) ;
+}
+
+.desc-values {
+    background-color: rgba(164, 133, 168, 0.267);
+    text-align: center;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: rgba(146, 105, 185, 0.37);
+    margin-left: 520px;
+    margin-top: -350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.desc-values h1 {
+    font-size: 40px;
+}
+
+.desc-values p {
+    font-size: 24px;
+}
+
+.product-button {
+    margin: 30px 0px 230px 1010px;
+    width: 200px;
+    height: 50px;
+}

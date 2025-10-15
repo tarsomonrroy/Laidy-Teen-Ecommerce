@@ -1,0 +1,91 @@
+.navigation {
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    background-color: #ececec;
+    color: #fff;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 260px;
+    padding-bottom: 20px;
+}
+
+.navigation ul li {
+    margin-right: 20px;
+}
+
+.navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.navigation ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.navigation ul li a:hover {
+    color: #a41de2;
+}
+
+/* Object: Navbar dropdown */
+#linkPerfil a span{
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#linkPerfil a svg {
+    margin-left: 10px;
+    margin-top: -8px;
+    width: 30px;
+    height: 30px;
+    transition: color 0.3s ease;
+}
+
+#linkPerfil a:hover {
+    color: #8700c5;
+}
+
+.profile-icon {
+    margin-left: 20px;
+}
+
+/* Object: Navbar search */
+.form-inline {
+    margin-left: 300px;
+}
+
+#search-input {
+    width: 380px;
+    height: 50px;
+}
+
+.search-link svg {
+    width: 25px;
+    height: auto;
+    color: #777777;
+    transition: color 0.3s ease;
+}
+
+/* Object: Bag */
+.bag-link {
+    margin-left: 50px;
+}
+
+.bag-link svg {
+    width: 40px;
+    height: auto;
+    color: #777777;
+    transition: color 0.3s ease;
+}
+
+.bag-link svg:hover {
+    color: #8700c5;
+}

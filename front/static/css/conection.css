@@ -1,0 +1,66 @@
+/* Pages: cadastrar, login, usuario */
+#connection-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 2.5rem
+}
+
+#edit-container {
+    margin-top: 1280px;
+    margin-bottom: 2.5rem;   
+}
+
+/* Pages: cadastrar, login */
+#password-help, #password-accepted-tip {
+    padding-bottom: 15px;
+}
+
+.relink-alt {
+    margin-bottom: 20px;
+}
+
+.relink-top {
+    margin-bottom: 50px;
+}
+
+/* Pages: usuario */
+#edit-form {
+    display: none;
+}
+
+#btn-edit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btn-delete {
+    margin-top: 40px;
+}
+
+/* Pages: Reset Pass */
+#loginForm {
+    margin-top: 50px;
+}
+
+.return-login {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.reset-password {
+    padding-bottom: 30px;
+}
+
+/* SET BACKGROUND COLOR WHEN AUTOCOMPLETING AN INPUT */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+::selection {
+    background-color: #9b4dbe;
+    color: white;
+}

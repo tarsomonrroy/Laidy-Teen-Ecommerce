@@ -1,0 +1,131 @@
+body {
+    background-image: linear-gradient(
+        rgb(242, 230, 248),
+        rgb(248, 214, 242),
+        rgb(202, 183, 245),
+        rgb(181, 154, 243),
+        rgb(169, 145, 235),
+        rgb(181, 154, 243),
+        rgb(202, 183, 245),
+        rgb(248, 214, 242),
+        rgb(242, 230, 248)
+    );
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cart-page {
+    background-color: rgba(255, 255, 255, 0.386);
+    width: 600px;
+}
+
+#cart-container {
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.main-title {
+    margin-bottom: 30px;
+}
+
+/* Empty Cart */
+.empty-cart {
+    border-color: rgba(128, 128, 128, 0.247);
+    border-style: double;
+    border-radius: 30px;
+    border-width: 4px;
+    text-align: center;
+    padding: 50px;
+}
+
+.empty-cart img {
+    border-color: rgba(128, 128, 128, 0.247);
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 4px;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.empty-cart p {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+/* Item Image */
+.img-prod {
+    margin-bottom: 100px;
+}
+
+.img-prod img {
+    width: 130px;
+    height: 160px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+/* Item Title */
+.card-title {
+    margin-left: 95px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.card-text {
+    margin-left: 95px;
+    font-size: 24px;
+}
+
+.card-body {
+    margin-top: 40px;
+}
+
+/* Size itens */
+.size-container{
+    text-align: center;
+}
+
+/* Quantity Itens */
+.quantity-lab {
+    padding-right: 15px;
+}
+
+.quantidade-num {
+    margin-bottom: 10px;
+    padding: 0px 15px;
+}
+
+.quantity-btn {
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.quantity-btn:focus {
+    outline: none;
+}
+
+/* Remove item */
+.btn-remover {
+    color: white;
+    background-color: #ff0000d3;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-left: 63px;
+}
+
+/* Final text */
+
+.total-price {
+    text-align: center;
+}
+
+/* Final buttons */
+
+.buttons-cart{
+    text-align: center;
+}
