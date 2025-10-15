@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "66264b569e8f44493328eff0"
+  },
+  "nome": "Felipe Selva",
+  "email": "sellvafelipe@gmail.com",
+  "telefone": "11982203008",
+  "endereco": {
+    "rua": "Rua Celso Barbosa Lima 171",
+    "numero": "171",
+    "complemento": "Casa 1",
+    "bairro": "Jd Silva Telles",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "cep": "08160600"
+  }
+}]
